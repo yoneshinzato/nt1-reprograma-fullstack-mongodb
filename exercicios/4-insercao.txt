@@ -25,4 +25,5 @@ Titulo = Titulo R
 Descrição = Oracle
 Data de Inclusão = data de hoje
 
-db.todo.insert({"titulo": "R", "descricao": "Oracle", "dataInclusao": }).pretty()
+db.todo.insert({"titulo": "R", "descricao": "Oracle", "dataInclusao": }).pretty() 
+hello
