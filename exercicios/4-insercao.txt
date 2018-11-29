@@ -21,9 +21,18 @@ Descrição = Microsoft
 
 db.todo.insert({"titulo": "Y", "descricao": "Microsoft"}).pretty()
 
+db.todo.insertMany([
+	{"titulo": "Titulo P", "descricao": "Firebase"},
+	{"titulo": "Titulo Y", "descricao": Microsoft}
+
+])
+
 Titulo = Titulo R
 Descrição = Oracle
 Data de Inclusão = data de hoje
 
-db.todo.insert({"titulo": "R", "descricao": "Oracle", "dataInclusao": }).pretty() 
-hello
+db.todo.insertOne({"titulo": "R", "descricao": "Oracle", "dataInclusao": new Date() }).pretty() 
+
+db.todo.update({"_id": ObjectId("5bfc75b89bf63cf0d724d49a")}, {$set: {"titulo": "Titulo Y"}})
+
+no caso acima vai pegar só a chave do título e mudar só o que foi especificado!

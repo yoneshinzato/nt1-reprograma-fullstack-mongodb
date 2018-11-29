@@ -2,17 +2,34 @@
 Titulo = Titulo Uava
 Descrição = Java
 Concluída = verdadeiro
+db.todo.update({"_id": ObjectId("5c005f54cdf2fe1351c1b6f0")}, {$set: {"titulo": "Titulo Uava", "descricao": "Java", "concluida": "verdadeiro"}})
+db.todo.find({"_id": ObjectId("5c005f54cdf2fe1351c1b6f0")})
 
 Titulo = Titulo OSharp
 Descrição = CSharp
 Concluída = falso
 
+db.todo.update({"_id": ObjectId("5bfc75b89bf63cf0d724d4a1")}, {$set: {"titulo": "Titulo OSharp", "descricao": "CSharp", "concluida": "falso"}})
+db.todo.find({"_id": ObjectId("5bfc75b89bf63cf0d724d4a1")})
+
 Titulo = Titulo Pirebase
 Descrição = Firebase
+ ObjectId("5bfc75b89bf63cf0d724d49f")
+
+db.todo.update({"_id":  ObjectId("5bfc75b89bf63cf0d724d49f")}, {$set: {"titulo": "Titulo Pirebase", "descricao": "Firebase", "concluida": "falso"}})
+db.todo.find({"_id":  ObjectId("5bfc75b89bf63cf0d724d49f")})
 
 Titulo = Titulo Ycrosoft
 Descrição = Microsoft
+ObjectId("5bfc75b89bf63cf0d724d49e")
+
+db.todo.update({"_id": ObjectId("5bfc75b89bf63cf0d724d49e")}, {$set: {"titulo": "Titulo Ycrosoft", "descricao": "Microsoft", "concluida": "falso"}})
+db.todo.find({"_id":  ObjectId("5bfc75b89bf63cf0d724d49e")})
 
 Titulo = Titulo Roracle
 Descrição = Oracle
 Data de Inclusão = data de hoje
+ ObjectId("5bfc75b89bf63cf0d724d4a0")
+
+db.todo.update({"_id": ObjectId("5bfc75b89bf63cf0d724d4a0")}, {$set: {"titulo": "Titulo Roracle", "descricao": "Oracle", "dataInclusao": new Date()}})
+db.todo.find({"_id": ObjectId("5bfc75b89bf63cf0d724d4a0")})
