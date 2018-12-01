@@ -1,0 +1,2 @@
+db.users.aggregate({$lookup: {from: "postits", localField: "lista", foreignField: "_id", as : "users_postits"}}).pretty()
+
